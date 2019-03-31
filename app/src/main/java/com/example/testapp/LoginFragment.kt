@@ -43,10 +43,7 @@ class LoginFragment : Fragment() {
 
             progressBar_cyclic.visibility  = View.VISIBLE
             login.visibility = View.GONE
-
             mPhoneNumber = number.text.toString()
-
-
 
             if(mPhoneNumber!!.isEmpty() || mPhoneNumber!!.length < 10){
                 number.error = getString(R.string.enter_a_valid_mobile)

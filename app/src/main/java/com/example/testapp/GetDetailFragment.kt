@@ -24,7 +24,6 @@ import android.provider.MediaStore
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.google.android.material.snackbar.Snackbar
-import kotlinx.android.synthetic.main.activity_main.*
 
 
 class GetDetailFragment : Fragment() {
@@ -97,13 +96,15 @@ class GetDetailFragment : Fragment() {
             }
 
             if(path.isNullOrEmpty()) {
-                val snackbar = Snackbar.make(parentMain,"Your Picture is Mandatory.", Snackbar.LENGTH_LONG)
+                editPhotoButton.requestFocus()
+                editPhotoButton.error = "Photo required"
+          /*      val snackbar = Snackbar.make(parent, "Your Picture is Mandatory.", Snackbar.LENGTH_LONG)
                 snackbar.setAction("Dismiss") { }
-                snackbar.show()
+                snackbar.show()*/
                 return@setOnClickListener
             }
 
-                val fragment = VerifyOtpFragment()
+            val fragment = VerifyOtpFragment()
             val fm  = activity?.supportFragmentManager
             val ft = fm?.beginTransaction()
             val bundle = Bundle()
@@ -130,7 +131,7 @@ class GetDetailFragment : Fragment() {
         } else {
             // permission denied, boo! Disable the
             // functionality that depends on this permission.
-            val snackbar = Snackbar.make(parentMain, "Permission Denied.", Snackbar.LENGTH_LONG)
+            val snackbar = Snackbar.make(parent, "Permission Denied.", Snackbar.LENGTH_LONG)
             snackbar.setAction("Dismiss") { }
             snackbar.show()
         }
@@ -169,7 +170,7 @@ class GetDetailFragment : Fragment() {
                             imageview.setImageBitmap(bitmap)
                         }else{
 
-                            val snackbar = Snackbar.make(parentMain, "Some error occurred. Please try again.", Snackbar.LENGTH_LONG)
+                            val snackbar = Snackbar.make(parent, "Some error occurred. Please try again.", Snackbar.LENGTH_LONG)
                             snackbar.setAction("Dismiss") { }
                             snackbar.show()
 

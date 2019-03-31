@@ -98,9 +98,9 @@ class GetDetailFragment : Fragment() {
             if(path.isNullOrEmpty()) {
                 editPhotoButton.requestFocus()
                 editPhotoButton.error = "Photo required"
-          /*      val snackbar = Snackbar.make(parent, "Your Picture is Mandatory.", Snackbar.LENGTH_LONG)
+                val snackbar = Snackbar.make(parent, "Your Picture is Mandatory.", Snackbar.LENGTH_LONG)
                 snackbar.setAction("Dismiss") { }
-                snackbar.show()*/
+                snackbar.show()
                 return@setOnClickListener
             }
 

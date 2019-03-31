@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">testapp</string>
+    <string name="enter_a_valid_mobile">Enter a valid mobile</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="log_in">Log in</string>
+    <string name="click_picture">Click Picture</string>
+    <string name="verify">Verify</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="enter_name">Enter name</string>
+    <string name="enter_email_address">Enter Email Address</string>
+    <string name="next">Next</string>
+    <string name="sign_out">Sign out</string>
+    <string name="visits">Welcome back for %s time.</string>
+    <string name="_00_00">00</string>
+    <string name="exit">Exit</string>
+    <string name="sec_remaining">s</string>
+    <string name="welcome">Welcome,</string>
+    <string name="todo">TODO</string>
+    <string name="editPhoto">Edit Photo</string>
+    <string name="edit">Add Details</string>
+    <string name="contact_information">Contact information</string>
+    <string name="number">Number</string>
+    <string name="email">Enter email</string>
+    <string name="mobile_number">Mobile number</string>
+    <string name="semail">Email</string>
+    <string name="visit">Visits</string>
+    <string name="name">Name</string>
+    <string name="please_">Please enter mobile number sent to</string>
+    <string name="numberText">A text message with a
+        6-digit verification code was just sent to +91
+    </string>
+</resources>

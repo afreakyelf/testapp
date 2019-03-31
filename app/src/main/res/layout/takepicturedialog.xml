@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:padding="@dimen/_dp_5"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.camerakit.CameraKitView
+            app:camera_facing="front"
+            android:id="@+id/camera"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_dp_300"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <Button
+            android:fontFamily="@font/poppins"
+            android:text="@string/click_picture"
+            android:layout_width="300dp"
+            android:background="@color/main_color"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:id="@+id/takePicture"
+            app:layout_constraintStart_toStartOf="@id/camera"
+            app:layout_constraintEnd_toEndOf="@id/camera"
+            android:layout_marginTop="@dimen/_dp_5"
+            app:layout_constraintTop_toBottomOf="@+id/camera"
+            tools:ignore="UnusedAttribute"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
